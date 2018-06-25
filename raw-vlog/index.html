@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>rawVLOG - Juan Sebastian Angarita</title>
+  <meta name="description" content="Software Engineer. SF - NYC - BOG. 
+">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,900,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/raw-vlog/">
+  <link rel="alternate" type="application/rss+xml" title="Juan Sebastian Angarita" href="/feed.xml">
+</head>
+
+  <body>
+    <main class="u-container">
+      <div class="c-page">
+  <header class="c-page__header">
+  <h1><code><a href="/">Juan Sebastian Angarita</a></code></h1>
+  
+  <p>
+    <a href="/projects/">Projects</a>
+  </p>
+</header>
+
+  <div class="c-page__main">
+    <article class="c-article">
+  <header class="c-article__header">
+    <h1 class="c-article__title">rawVLOG</h1>
+  </header>
+  <div class="c-article__main">
+    <p>Vlogging should not only be for those with conveniently important lives or those who wish to make it all public. Some moments are important just for you and it’s ok for you to want to remember them later on.</p>
+
+<p><img src="/assets/raw-vlog/Camera@2x.png" alt="rawVLOG camera screen" /></p>
+
+<p>Open rawVLOG and you will be in the camera screen which starts recording once you hold your finger down on the screen. Overlayed on your portrait you will see “context”. You will see the day of the week, the time, and the date. These serve to contextualize what you are talking about. Perhaps you were very excited because it was a Friday or because it was Dec 31, New Year’s Eve. On the other hand, you may have baggy eyes because the rawVLOG was recorded at 3:24 AM.</p>
+
+<p><img src="/assets/raw-vlog/Videos@2x.png" alt="rawVLOG vlogs screen" /></p>
+
+<p>Swipe right and you will see all of your rawVLOGs grouped by date. Each will have its title along with the time it was recorded and a randomly generated color. Clicking on any of the entries will play the rawVLOG of your choice and you will be able to relive that intimate moment and remember how you felt.</p>
+
+<h2 id="development-notes">Development Notes</h2>
+
+<p>rawVLOG is written in Swift and makes interesting use of AVFoundation, and CoreGraphics. AVFoundation is used to capture the video and audio from the camera, process the frames, transcode it, and write it out in real-time. CoreGraphics is used for drawing the “context” for the rawVLOG. Since the context has interesting graphics such as the day of the week hollowed out from a rectangle, this is cached in a CGLayer and reused on each frame for performance reasons.</p>
+
+  </div>
+  <footer class="c-article__footer">
+  </footer>
+</article>
+
+  </div>
+  <footer class="c-page__footer">
+  <p>&copy; 2018</p>
+  <p></p>
+</footer>
+
+</div>
+
+    </main>
+    
+  </body>
+</html>
